@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="beta" prefHeight="170.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            stylesheets="/css/style.css" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="fr.craftyourmind.launcher.control.BetaController">
+   <Label id="betaLabel" layoutX="190.0" layoutY="50.0" text="Accéder à la Beta ?"/>
+   <Button id="betaButton" fx:id="yes" layoutX="130.0" layoutY="100.0" mnemonicParsing="false" prefWidth="90.0"
+           text="Oui" onAction="#beta"/>
+   <Button id="betaButton" fx:id="no" layoutX="230.0" layoutY="100.0" mnemonicParsing="false" prefWidth="90.0"
+           text="Non" onAction="#beta" defaultButton="true"/>
+</AnchorPane>

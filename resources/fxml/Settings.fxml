@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:controller="fr.craftyourmind.launcher.control.SettingsController" maxHeight="-Infinity"
+            maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="1124.0"
+            styleClass="root" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane id="settingsBackground" layoutX="15.0" layoutY="39.0" prefHeight="584.0" prefWidth="1094.0">
+        <AnchorPane styleClass="settingsPane" layoutX="31.0" layoutY="56.0" prefHeight="506.0"
+                    prefWidth="643.0">
+            <Label styleClass="settingsLabel" layoutX="69.0" layoutY="-30.0" text="Paramètres Généraux"/>
+            <Button styleClass="commonButton" id="checkButton" fx:id="username" contentDisplay="RIGHT"
+                    layoutX="20.0"
+                    layoutY="54.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="287.0"
+                    text="Retenir le pseudo" textFill="WHITE" onAction="#settingsDocument">
+                <graphic>
+                    <ImageView id="checkImage" fx:id="usernameValid"
+                               fitHeight="47.0" fitWidth="47.0" pickOnBounds="true"
+                               preserveRatio="true" translateX="84.0">
+                        <Image url="/images/check.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button styleClass="commonButton" id="checkButton" fx:id="password" contentDisplay="RIGHT"
+                    layoutX="339.0"
+                    layoutY="54.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="287.0"
+                    text="Retenir le mot de passe" textFill="WHITE" onAction="#settingsDocument">
+                <graphic>
+                    <ImageView id="checkImage" fx:id="passwordValid"
+                               fitHeight="47.0" fitWidth="47.0" pickOnBounds="true"
+                               preserveRatio="true" translateX="40.0">
+                        <Image url="/images/check.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button styleClass="commonButton" fx:id="site" layoutX="20.0" layoutY="139.0"
+                    mnemonicParsing="false" prefHeight="66.0" prefWidth="287.0" text="CraftYourMind.fr"
+                    textFill="WHITE" onAction="#settingsDocument"/>
+            <Button styleClass="commonButton" fx:id="teamspeak" layoutX="339.0" layoutY="139.0"
+                    mnemonicParsing="false" prefHeight="66.0" prefWidth="287.0" text="TeamSpeak"
+                    textFill="WHITE" onAction="#settingsDocument"/>
+            <Label id="ram" layoutX="180.0" layoutY="234.0" text="Gestion de la ram" textFill="WHITE"/>
+            <Slider fx:id="ram" id="slider" blockIncrement="1024.0" layoutX="22.0" layoutY="309.0"
+                    majorTickUnit="1024.0" max="8192.0" min="1024.0" minorTickCount="1" prefHeight="80.0"
+                    prefWidth="603.0" showTickLabels="true" showTickMarks="true" value="2048.0"
+                    snapToTicks="true"/>
+            <CheckBox layoutX="22.0" layoutY="448.0" mnemonicParsing="false" text="Montrer la console"
+                      textFill="WHITE" onAction="#console">
+                <font>
+                    <Font name="Agency FB" size="25.0"/>
+                </font>
+            </CheckBox>
+            <Label layoutX="574.0" layoutY="482.0" text="Beta 2.6.44" textFill="WHITE">
+                <font>
+                    <Font name="Agency FB" size="17.0"/>
+                </font>
+            </Label>
+        </AnchorPane>
+        <AnchorPane styleClass="settingsPane" layoutX="687.0" layoutY="56.0" prefHeight="382.0"
+                    prefWidth="379.0">
+            <Label styleClass="settingsLabel" layoutX="67.0" layoutY="-30.0" text="Paramètres Personels"/>
+            <Button styleClass="commonButton" fx:id="skin" layoutX="19.0" layoutY="49.0"
+                    mnemonicParsing="false"
+                    prefHeight="66.0" prefWidth="340.0" text="Changer de Skin/Cape" textFill="WHITE"
+                    onAction="#settingsDocument"/>
+            <Button styleClass="commonButton" fx:id="resourcepack" layoutX="19.0" layoutY="129.0"
+                    mnemonicParsing="false" prefHeight="66.0" prefWidth="340.0" text="TexturePack"
+                    textFill="WHITE" onAction="#settingsDocument"/>
+            <Button styleClass="commonButton" fx:id="shaders" layoutX="20.0" layoutY="209.0"
+                    mnemonicParsing="false"
+                    prefHeight="66.0" prefWidth="340.0" text="Shaders" textFill="WHITE"
+                    onAction="#settingsDocument"/>
+            <Button styleClass="commonButton" fx:id="screen" layoutX="19.0" layoutY="289.0"
+                    mnemonicParsing="false"
+                    prefHeight="66.0" prefWidth="340.0" text="ScreenShots" textFill="WHITE"
+                    onAction="#settingsDocument"/>
+            <Label id="settingstextlabel" layoutX="44.0" layoutY="-27.0" prefHeight="54.0"
+                   prefWidth="230.0">
+                <font>
+                    <Font name="Agency FB" size="22.0"/>
+                </font>
+            </Label>
+        </AnchorPane>
+        <Button layoutX="687.0" layoutY="455.0" mnemonicParsing="false" prefHeight="106.0" prefWidth="379.0"
+                id="settingsExit" text="Retour à l'authentification" textFill="WHITE"
+                onAction="#launcher">
+            <graphic>
+                <ImageView fitHeight="60.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="/images/return_arrow.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </AnchorPane>
+</AnchorPane>
+

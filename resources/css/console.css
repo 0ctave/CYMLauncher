@@ -1,0 +1,95 @@
+@font-face {
+    src: url('/polices/agency_fb.ttf');
+}
+
+.root {
+    -fx-background-color: rgb(56, 56, 56);
+}
+
+.button, #combobox {
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+    -fx-background-color: #317abc;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-focus-traversable: false;
+}
+
+.button:hover, #combobox:hover {
+    -fx-background-color: #357fc0;
+}
+
+#scrollpane {
+    -fx-background-color: rgb(56, 56, 56);
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #6d7984;
+    -fx-focus-traversable: false;
+}
+
+#scrollpane > .viewport {
+    -fx-background-color: transparent;
+}
+
+#combobox .list-view .list-cell:hover {
+    -fx-background-color: #317abc;
+    -fx-text-fill: white;
+}
+
+#combobox .list-view {
+    -fx-background-color: #317abc;
+}
+
+#combobox .list-view:hover {
+    -fx-background-color: #317abc;
+}
+
+#combobox .cell:selected {
+    -fx-text-fill: white;
+    -fx-background-color: #317abc;
+}
+
+#textarea {
+    -fx-font-size: 14;
+    -fx-text-fill: WHITE;
+    -fx-font-family: "Agency FB";
+    -fx-background-color: rgb(56, 56, 56);
+    -fx-border-color: rgb(56, 56, 56);
+    -fx-focus-traversable: false;
+}
+
+#textarea .content {
+    -fx-background-color: rgb(56, 56, 56);
+    -fx-border-color: rgb(56, 56, 56);
+    -fx-focus-traversable: false;
+}
+
+
+#textarea .scroll-bar:vertical .increment-button ,
+#textarea .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+
+}
+
+#textarea  .scroll-bar .increment-arrow,
+#textarea  .scroll-bar .decrement-arrow
+{
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+
+#textarea .scroll-bar:vertical .track{
+    -fx-background-color:rgb(56, 56, 56);
+    -fx-border-color:rgb(56, 56, 56);
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+#textarea .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+}

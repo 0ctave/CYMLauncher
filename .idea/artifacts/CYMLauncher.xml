@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="CYMLauncher">
+    <output-path>$PROJECT_DIR$/out/artifacts/CYMLauncher</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="fr.craftyourmind.launcher.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="CYM-LAUNCHER" />
+        <option name="vendor" value="" />
+        <option name="version" value="1.0.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="CYMLauncher.jar">
+        <element id="module-output" name="CYMLauncher" />
+      </element>
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-logging-1.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/s-update-3.1.0-BETA.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/httpcore-4.4.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/snakeyaml-1.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/httpclient-4.5.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jcommander-1.30.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/openlauncherlib-3.0.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

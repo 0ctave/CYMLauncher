@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.web.WebView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import fr.craftyourmind.launcher.util.PersistentPromptTextField?>
+<?import fr.craftyourmind.launcher.util.PersistentPromptPasswordField?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="fr.craftyourmind.launcher.control.LauncherController"
+            prefHeight="639.0" prefWidth="1124.0">
+    <AnchorPane prefHeight="639.0" prefWidth="305.0">
+        <ImageView fitHeight="176.0" fitWidth="248.0" layoutX="37.0" layoutY="12.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@/images/logo.png"/>
+        </ImageView>
+        <PersistentPromptTextField id="field" fx:id="username" layoutX="36.0" layoutY="198.0" prefHeight="48.0"
+                                   prefWidth="230.0"
+                                   promptText="Pseudo"/>
+        <PersistentPromptPasswordField id="field" fx:id="password" layoutX="37.0" layoutY="263.0" prefHeight="48.0"
+                                       prefWidth="230.0" promptText="Mot de Passe "/>
+        <Label fx:id="invalidCredential" layoutX="104.0" layoutY="313.0" text="Identifiants erronés"
+               textFill="#ff4347"
+               visible="false"/>
+        <Button styleClass="commonButton" fx:id="play" layoutX="37.0" layoutY="335.0" mnemonicParsing="false"
+                prefHeight="48.0"
+                prefWidth="230.0" text="Jouer !" textFill="WHITE" onAction="#play" defaultButton="true"/>
+        <ProgressBar fx:id="progressBar" layoutX="36.0" layoutY="406.0" maxHeight="17.0" prefWidth="232.0"
+                     progress="0.0"/>
+        <Button id="facebook" fx:id="facebook" layoutX="52.0" layoutY="445.0" mnemonicParsing="false"
+                prefHeight="47.0" prefWidth="47.0" onAction="#social"/>
+        <Button id="twitter" fx:id="twitter" layoutX="129.0" layoutY="445.0" mnemonicParsing="false"
+                prefHeight="47.0" prefWidth="47.0" onAction="#social"/>
+        <Button id="youtube" fx:id="youtube" layoutX="205.0" layoutY="445.0" mnemonicParsing="false"
+                prefHeight="47.0" prefWidth="47.0" onAction="#social"/>
+        <Label id="label" fx:id="playersLabel" layoutX="38.0" layoutY="515.0" prefHeight="33.0"
+               prefWidth="230.0" text="Joueurs connectés :  314" textFill="#404040"/>
+        <Button styleClass="commonButton" fx:id="settings" layoutX="38.0" layoutY="565.0"
+                mnemonicParsing="false"
+                prefHeight="33.0" prefWidth="230.0" text="Paramètres" textFill="WHITE" onAction="#settings"/>
+    </AnchorPane>
+    <AnchorPane layoutX="305.0" prefHeight="639.0" prefWidth="819.0">
+        <WebView fx:id="webview" layoutX="-5.0" layoutY="39.0" prefHeight="591.0" prefWidth="809.0"/>
+    </AnchorPane>
+</AnchorPane>

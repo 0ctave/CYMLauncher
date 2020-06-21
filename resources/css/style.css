@@ -1,0 +1,269 @@
+@font-face {
+    font-family: Agency FB;
+    src: url('/polices/agency_fb.ttf');
+}
+
+@font-face {
+    font-family: Agency FB Bold;
+    src: url('/polices/agency_fb_bold.ttf');
+}
+
+.root {
+    -fx-font-family: "Agency FB";
+    -fx-background-color: rgb(56, 56, 56);
+}
+
+.button {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-cursor: hand;
+    -fx-focus-traversable: false;
+}
+
+.commonButton {
+    -fx-background-color: rgb(46, 117, 181);
+    -fx-background-radius: 5;
+    -fx-font-size: 22;
+}
+
+.commonButton:hover {
+    -fx-background-color: rgb(49, 122, 188);
+}
+
+.commonButton:disabled {
+    -fx-background-color: #6d7984;
+}
+
+#title {
+    -fx-font-size: 19;
+}
+
+#close {
+    -fx-background-image : url("/images/close.png");
+}
+
+#minimize {
+    -fx-background-image : url("/images/minimize.png");
+}
+
+/* === Launcher === */
+
+#facebook {
+    -fx-background-image: url("/images/facebook.png");
+}
+
+#facebook:hover {
+    -fx-background-image: url("/images/facebook_hover.png");
+}
+
+#twitter {
+    -fx-background-image: url("/images/twitter.png");
+}
+
+#twitter:hover {
+    -fx-background-image: url("/images/twitter_hover.png");
+}
+
+#youtube {
+    -fx-background-image: url("/images/youtube.png");
+}
+
+#youtube:hover {
+    -fx-background-image: url("/images/youtube_hover.png");
+}
+
+#textlabel {
+    -fx-background-color: rgb(208, 208, 208);
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: innershadow(three-pass-box, rgba(50, 50, 50, 0.7), 13, 0.01, 2, 2);
+}
+
+#textfield {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+#textfield{
+    -fx-font-size: 22;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+#field {
+    -fx-font-family: "AgencyFB";
+    -fx-font-size: 20;
+    -fx-background-color: rgb(208, 208, 208);
+    -fx-background-radius: 5;
+    -fx-effect: innershadow(three-pass-box, rgba(50, 50, 50, 0.7), 10, 0.01, 2, 2);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+
+#label {
+    -fx-font-family: "Agency FB";
+    -fx-font-size: 20;
+    -fx-background-color: rgb(208, 208, 208);
+    -fx-background-radius: 5;
+    -fx-effect: innershadow(three-pass-box, rgba(50, 50, 50, 0.7), 10, 0.01, 2, 2);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+
+#invalidCredential {
+    -fx-font-size: 16;
+}
+
+.progress-bar {
+    -fx-shadow-highlight-color: transparent;
+}
+
+.progress-bar .track {
+    -fx-background-image: url("/images/bar.png");
+    -fx-background-repeat: no-repeat;
+}
+
+.progress-bar .bar {
+    -fx-background-image: url("/images/bar_full.png");
+    -fx-background-repeat: no-repeat;
+}
+
+
+/* === Settings === */
+
+#settingsBackground {
+    -fx-background-color: rgb(21, 21, 21);
+}
+
+.settingsPane {
+    -fx-background-color: rgb(56, 56, 56);
+}
+
+#settingsExit {
+    -fx-font-family: "Agency FB";
+    -fx-background-color: rgb(46, 117, 181);
+    -fx-background-radius: 0;
+    -fx-font-size: 26;
+}
+
+#settingsExit:hover {
+    -fx-background-color: rgb(49, 122, 188);
+}
+
+#checkButton {
+    -fx-alignment: center-left;
+}
+
+.settingsLabel {
+    -fx-background-color: rgb(208, 208, 208);
+    -fx-alignment: center;
+    -fx-padding: 6px;
+    -fx-font-size: 26;
+    -fx-border-width: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: rgb(21, 21, 21);
+    -fx-background-radius: 5;
+    -fx-shadow-highlight-color: transparent;
+    -fx-background-insets: 3;
+
+}
+
+.slider .track {
+    -fx-background-color: white;
+    -fx-max-height: 2;
+    -fx-pref-height: 2;
+}
+
+.slider .axis {
+    -fx-tick-label-fill: white;
+    -fx-tick-label-font: 16 "Agency FB";
+    -fx-tick-label-gap: 20;
+}
+
+.slider .axis .axis-tick-mark, .slider .axis .axis-minor-tick-mark {
+    -fx-translate-y: 10;
+    -fx-stroke: white;
+}
+
+.slider .thumb {
+    -fx-background-color: dodgerblue;
+}
+
+.slider .thumb:hover {
+    -fx-background-color: rgb(49, 122, 188);
+}
+
+.slider .thumb:pressed {
+    -fx-background-color: white;
+}
+
+#ram {
+    -fx-font-size: 56;
+}
+
+.check-box {
+    -fx-focus-traversable: false;
+    -fx-shadow-highlight-color: transparent;
+}
+
+.check-box>.box{
+    -fx-background-color: transparent;
+    -fx-border-color: #6e6e6e;
+    -fx-border-width: 5;
+    -fx-border-radius: 3;
+}
+
+.check-box:hover>.box {
+    -fx-border-color: #727272;
+}
+
+.check-box:selected>.box {
+    -fx-background-color: #317abc;
+    -fx-border-color: #317abc;
+    -fx-border-radius: 3;
+    -fx-background-radius: 10;
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 2;
+
+}
+
+.check-box:selected:hover>.box {
+    -fx-background-color: #357fc0;
+    -fx-border-color: #357fc0;
+}
+
+.check-box:selected>.box>.mark{
+    -fx-background-color: white;
+    -fx-shape: "M14.596,2.055L12.455,0C9.687,2.884,6.011,6.714,5.158,7.602L2.055,4.624L0,6.765l5.242,5.037l0.003-0.004 l0.003,0.004L14.596,2.055z";
+}
+
+.check-box>.box>.mark {
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-shape: none;
+}
+
+.text-input {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+}
+.text-input:focused {
+    -fx-prompt-text-fill: transparent;
+}
+
+/* === Beta === */
+#beta {
+    -fx-background-color: rgb(46, 46, 46);
+    -fx-border-width: 3;
+    -fx-border-color: rgb(30, 30, 30);
+}
+
+#betaLabel {
+    -fx-text-fill: white;
+}
+
+#betaButton {
+    -fx-background-color: rgb(46, 117, 181);
+    -fx-cursor: hand;
+    -fx-focus-traversable: false;
+    -fx-text-fill: white;
+}

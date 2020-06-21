@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.embed.swing.SwingNode?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import fr.craftyourmind.launcher.logger.LogType?>
+<Pane fx:controller="fr.craftyourmind.launcher.control.ConsoleController" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" styleClass="root"
+      stylesheets="/css/console.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane id="scrollpane" prefHeight="358.0" prefWidth="800.0">
+        <SwingNode fx:id="textarea" layoutY="-3.0"/>
+    </AnchorPane>
+    <Button layoutX="14.0" layoutY="362.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="84.0" text="Copier"/>
+    <Button layoutX="104.0" layoutY="362.0" mnemonicParsing="false" prefWidth="84.0" text="Coller"/>
+    <ComboBox id="combobox" layoutX="194.0" layoutY="362.0" prefHeight="32.0" prefWidth="127" promptText="Minimal"
+              onAction="#level">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <LogType fx:value="Minimal"/>
+                <LogType fx:value="Intermediaire"/>
+                <LogType fx:value="Debug"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+</Pane>
